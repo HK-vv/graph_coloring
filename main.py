@@ -33,6 +33,6 @@ if __name__=='__main__':
 				for z in model:
 					if z>0:
 						color.append(dec(z,c))
-				print(f"an legal coloring scheme is\n{color}")
+				print(f"a legal coloring scheme is\n{color}")
 				draw_graph(G, color=color, target='with_color.png')
 				break

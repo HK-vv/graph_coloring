@@ -36,7 +36,7 @@ $$
 ## 例子
 
 在代码中编写了样例生成模块.作为样例,当点数和边数分别为$n=10,m=20$时, 生成样例如下。  
-![original.png](../../_resources/original-1.png)  
+<img src="./pic/original.png" alt="original.png" style="zoom:70%;" />  
 使用求解器求解, 给出的结果如下
 
 ```
@@ -46,12 +46,12 @@ graph G IS NOT 2-colorable
 graph G IS NOT 3-colorable  
 graph G IS 4-colorable  
 \chi(G)=4  
-an legal coloring scheme is  
+a legal coloring scheme is  
 [(0, 3), (1, 1), (2, 2), (3, 1), (4, 0), (5, 0), (6, 2), (7, 0), (8, 1), (9, 0)]
 ```
 
 可以看到, 当$c=1,2,3$时对应的SAT问题都是不可满足的, 而当$c=4$时可满足, 其给出的染色方案图示如下, 因此$\chi(G)=4$。我们容易验证$c=3$的情况是无法满足的（比如考虑首先对028三点组成的三角形做任意初始染色, 后将与其接触的三角形依次染色即可发现矛盾）  
-![with_color.png](../../_resources/with_color-1.png)
+<img src="./pic/with_color.png" alt="with_color.png" style="zoom:70%;" />
 
 ## 具体实现
 
